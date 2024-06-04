@@ -48,6 +48,7 @@ def criar_conta(agencia, numero_conta, usuarios, contas):
         contas.append({"agencia": agencia, "numero_conta": numero_conta, "usuario": usuario})
         print(f"Conta {numero_conta} de {usuario['nome']} criada com sucesso!")
         numero_conta += 1
+        return numero_conta
     else:
         print("Tu colocou o CPF errado, não?")
         
